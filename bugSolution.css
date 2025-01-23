@@ -1,0 +1,23 @@
+/* bugSolution.css */
+
+/* Correct usage of calc() */
+.container {
+  width: calc(100% - 20px); /* Correct: Units provided */
+}
+
+.element {
+  width: calc(50% - (10px + 5px)); /* Correct: Parentheses for complex calculations */
+}
+
+.another-element {
+  height: calc((100vh - 100px) / 2); /* Correct: Parentheses for clarity */
+}
+
+/* Avoid these mistakes */
+/*.incorrect-container {
+  width: calc(100% - 20); /* Incorrect: Missing unit */
+}*/
+
+/*.incorrect-element {
+  width: calc(50% - 10px + 5px); /* Incorrect: Implicit precedence might vary */
+}*/
